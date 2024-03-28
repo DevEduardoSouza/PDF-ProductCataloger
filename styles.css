@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.product-container {
+  background-color: #fefefe;
+  border-top: solid 20px #e8c89d;
+  border-bottom: solid 20px #e8c89d;
+  page-break-before: always;
+  page-break-inside: avoid;
+  position: relative; /* Adiciona posição relativa para posicionar elementos filhos absolutos */
+}
+
+.product-container .product-image img {
+  width: 300px;
+  height: auto;
+}
+
+.product-container .product-info {
+  position: absolute;
+  top: 0;
+  left: 70%; /* Move o elemento para o meio */
+  transform: translateX(-50%); /* Centraliza horizontalmente */
+  padding: 5px;
+  width: 60%;
+  text-align: left; /* Ajusta o alinhamento do texto */
+}
+
+.product-container .product-info .price {
+  font-size: 35px;
+  font-weight: bolder;
+  margin: 20px 0;
+}
+
+.logo {
+  position: absolute;
+  top: 40px;
+  right: 0;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.product-code {
+  font-family: "Courier New", monospace; /* Fonte monoespaçada */
+  font-size: 14px; /* Tamanho da fonte */
+  margin: 10px 0; /* Espaçamento superior */
+  white-space: pre-wrap; /* Manter quebras de linha */
+}
+
+.product-description {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  color: #333; /* Cor do texto */
+  margin-top: 25px; /* Espaçamento superior */
+  /* Adicione outros estilos conforme necessário */
+  line-height: 1.2;
+}
+
+.product-container .product-info h2,
+.product-container .product-info p {
+  margin-bottom: 10px;
+}
+
+.container-init {
+  background-color: #e8c89d;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.content-init {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body.importados .product-image {
+  height: 400px;
+}
+
+@page {
+  size: 21cm 11.68cm;
+}
